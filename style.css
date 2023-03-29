@@ -1,0 +1,17 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    border-bottom: 1px solid black;
+    background-color: gray;
+}
+
+.title {
+    text-align: center;
+}
+
