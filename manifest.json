@@ -8,7 +8,7 @@
       "sizes": "192x192"
     },
     {
-      "src": "/icons/icon_512x512.png",
+      "src": "./images/icon_512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
