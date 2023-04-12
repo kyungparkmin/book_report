@@ -1,0 +1,20 @@
+{
+  "name" : "경소고 나만의 앱만들기",
+  "short_name" : "경소고",
+  "icons": [
+    {
+      "src": "./images/icon_192X192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icon_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff"
+}
