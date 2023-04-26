@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- kimsQ RC CSS -->
+  <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
+  <title>모달</title>
+</head>
+<body>
+
+<section class="page center">
+  <header class="bar bar-nav">
+    <h1 class="title">경소고</h1>
+  </header>
+  <main class="content">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal01">모달열기</button>
+  </main>
+</section>
+
+<section class="modal" id="modal01">
+  <header class="bar bar-nav">
+    <h1 class="title">모달제목</h1>
+  </header>
+  <main class="content">
+  </main>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+
+<script>
+  $('#modal01').on('show.rc.modal', function() {
+    let modal = $(this)
+
+
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then((users) => {
+        let email = users[1].email;
+
+        modal.find('.title').text(email)
+      })
+  })
+</script>
+</body>
+</html>

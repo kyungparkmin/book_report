@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- kimsQ RC CSS -->
+    <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
+  </head>
+  <body>
+    <section class="page center" id="page1">
+      <header class="bar bar-nav">
+        <h1 class="title">첫번쨰 페이지</h1>
+      </header>
+
+      <main class="content">
+        <div class="content-padded">
+          안녕하세요
+          <button type="button" class="btn btn-primary" data-toggle="page" data-target="#page2" data-start="#page1">Primary</button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal01" data-start="#page1">모달</button>
+        </div>
+      </main>
+    </section>
+
+    <section class="page right" id="page2">
+      <header class="bar bar-nav">
+        <a class="icon icon-left-nav pull-left" role="button" data-history="back"></a>
+        <h1 class="title">두번째 페이지</h1>
+      </header>
+
+      <main class="content">
+        <div class="content-padded">
+          안녕하세요
+        </div>
+        <img src="https://via.placeholder.com/192x192">
+      </main>
+    </section>
+
+    <section class="modal" id="modal01">
+      <header class="bar bar-nav">
+        <a class="icon icon-left-nav pull-left" role="button" data-history="back"></a>
+        <h1 class="title">모달</h1>
+      </header>
+
+      <main class="content">
+
+        <div class="content-padded">
+          모달입니다
+        </div>
+      </main>
+    </section>
+
+
+
+
+    <!-- jQuery first, then kimsQ RC JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "홍길동",
+    "email": "test@test.com",
+    "addr": "의성군",
+    "age": 19
+  },
+  {
+    "name": "강대환",
+    "email": "daehwan@test.com",
+    "addr": "대구광역시",
+    "age": 19
+  },
+  {
+    "name": "노렌지",
+    "email": "rage@test.com",
+    "addr": "봉양면",
+    "age": 19
+  }
+]

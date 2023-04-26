@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags always come first -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!-- kimsQ RC CSS -->
+  <link rel="stylesheet" href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css">
+  <title>모달</title>
+</head>
+<body>
+
+  <section class="page center">
+    <header class="bar bar-nav">
+      <h1 class="title">경소고</h1>
+    </header>
+    <main class="content">
+      <ul class="table-view">
+        <li class="table-view-cell media">
+          <a class="navigate-right"
+            data-toggle="modal"
+            data-target="#modal01"
+             data-subject="손흥민 퇴장에 대한 영국 해설진과 한국의 반응"
+             data-photo="https://ichef.bbci.co.uk/news/800/cpsprodpb/DF16/production/_109501175_koreanbbc..png"
+             data-article="손흥민이 3일 경기에서 백태클로 잉글랜드 프리미어리그(EPL) 진출 이후 두 번째 퇴장을 당했다
+                 태클을 당한 에버턴 미드필더 안드레 고메즈는 손흥민의 태클 직후 세르지 오리에 선수와 충돌하며 발목이 탈골되는 큰 부상을 당했다
+                 아직 공식 입장은 나오지 않았지만, 전문가들은 이를 두고 '끔찍한 부상'이라며 선수 생명이 위험할 수 있다며 우려했다
+                  이번 태클에 대한 비난과 옹호 의견이 엇갈리고 있는 가운데, 영국 현지와 한국의 반응을 정리해봤다"
+            >
+            <img class="media-object pull-left" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/DF16/production/_109501175_koreanbbc..png" style="width: 42px; height: 42px;">
+            <div class="media-body">
+              손흥민 퇴장에 대한 영국 해설진과 한국의 반응
+              <p>손흥민이 3일 경기에서 백태클로 잉글랜드 프리미어리그(EPL) 진출 이후 두 번째 퇴장을 당했다.<br>
+
+                태클을 당한 에버턴 미드필더 안드레 고메즈는 손흥민의 태클 직후 세르지 오리에 선수와 충돌하며 발목이 탈골되는 큰 부상을 당했다.<br>
+
+                아직 공식 입장은 나오지 않았지만, 전문가들은 이를 두고 "끔찍한 부상"이라며 선수 생명이 위험할 수 있다며 우려했다.<br>
+
+                이번 태클에 대한 비난과 옹호 의견이 엇갈리고 있는 가운데, 영국 현지와 한국의 반응을 정리해봤다.</p>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="http://placehold.it/42x42">
+            <div class="media-body">
+              Item 1
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </a>
+        </li>
+        <li class="table-view-cell media">
+          <a class="navigate-right">
+            <img class="media-object pull-left" src="http://placehold.it/42x42">
+            <div class="media-body">
+              Item 1
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet.</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </main>
+  </section>
+
+  <section class="modal" id="modal01">
+    <header class="bar bar-nav">
+      <h1 class="title">모달제목</h1>
+    </header>
+    <main class="content">
+      <img src="" style="width: 100%; height: 500px;">
+      <p class="article"></p>
+    </main>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+
+  <script>
+    $('#modal01').on('show.rc.modal', function(event) {
+      let button = $(event.relatedTarget)
+      let subject = button.data('subject')
+      let photo = button.data('photo')
+      let article = button.data('article')
+      let modal = $(this)
+
+      modal.find('.title').text(subject)
+      modal.find('img').attr('src', photo)
+      modal.find('.article').text(article)
+    })
+  </script>
+</body>
+</html>
